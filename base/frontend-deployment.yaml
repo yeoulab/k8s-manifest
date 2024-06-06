@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo-frontend
+  name: yeoulyeorm
   namespace: default
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: demo-frontend
+      app: yeoulyeorm
   template:
     metadata:
       labels:
-        app: demo-frontend
+        app: yeoulyeorm
     spec:
       containers:
-        - name: demo-frontend
-          image: $ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/demo-frontend:latest
+        - name: yeoulyeorm
+          image: $ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/yeoulyeorm:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
