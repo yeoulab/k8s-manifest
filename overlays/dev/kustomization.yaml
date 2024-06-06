@@ -4,9 +4,6 @@ images:
 - name: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/yeoulyeorm
   newName: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/yeoulyeorm
   newTag: abcdefg
-- name: 446129065248.dkr.ecr.ap-southeast-2.amazonaws.com/yeoulyeorm
-  newName: 446129065248.dkr.ecr.ap-southeast-2.amazonaws.com/yeoulyeorm
-  newTag: 40ac92bf
 resources:
 - ../../base
 patchesStrategicMerge:
